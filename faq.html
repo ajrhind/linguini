@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<head>
+<html>
+  <title>Linguini Webby</title>
+  <meta name="viewport" content="width-device-width, initial-scale-1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    
+<header>
+<div class="flex-container">
+	<div class="gLeft">
+		<h2><a href="index.html">hello</a</h2></div>
+		<div class="gRight">
+			<a class="secondary-button" href="contact.html"><div ><strong>contact</strong></div></a>
+			<a class="secondary-button" href="lessons.html"><div ><strong>lessons</strong></div></a>
+			<a class="secondary-button" href="recipes.html"><div><strong>recipes</strong></div></a>
+			<a class="secondary-button" href="login.html"><div><strong>login</strong></div></a>
+			<a class="secondary-button" href="profile.html"><div><strong>profile</strong></div></a>
+		</div>
+</div>
+</header>
+<section>
+<h2>Frequently Asked Questions</h2>
+<br><br><br>
+
+    <button class="accordion">Section 1</button>
+    <div class="panel">
+      <p>Lorem ipsum...</p>
+    </div>
+    
+    <button class="accordion">Section 2</button>
+    <div class="panel">
+      <p>Lorem ipsum...</p>
+    </div>
+    
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+      <p>Lorem ipsum...</p>
+    </div>
+
+</section>
+
+
+<section>
+    <p>Can't find what you need? submit a question!</p>
+    <a class="primary-button" href="contact.html"><div ><strong>contact</strong></div></a>
+
+</section>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+<footer>
+	<div class="flex-container">
+	<div class="footerL">left</div>
+	<div class="footerR">right</div>
+</div>
+<div class="footfoot"></div>
+</footer>
+
+</body>
+</html>

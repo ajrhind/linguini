@@ -1,0 +1,261 @@
+*{
+	box-sizing: border-box;
+	margin-top: 0px;
+}
+
+header{
+	padding-top: 0px;
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-bottom: 0px;
+	margin-top: 0px;
+	background-color: #C4F1BE;
+	height: 150px;
+
+}
+
+body{
+	padding-top: 15px;
+	font-family: helvetica;
+	margin-top: 0px;
+
+}
+
+section{
+
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding: 50px;
+
+
+}
+.flex-container{
+	display: flex;
+	flex-direction: row;
+	padding: 50px;
+	justify-content: space-evenly;
+}
+.gLeft{
+	float: left;
+	width: 35%;
+	
+}
+.gRight{
+	display: flex;
+	float: left;
+	width: 60%;
+	justify-content: space-between;
+	flex-direction: row;
+	height: 35px;
+
+}
+.secondary-button{
+	width: 100px;
+	height: 35px;
+	display: flex;
+	border: 2px solid #000;
+	border-radius: 50px;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	background-color: white;
+	font-size: 15px;
+ 	text-transform: uppercase;
+
+}
+
+.primary-button{
+	margin-left: auto;
+	margin-right: auto;
+	width: 180px;
+	height: 50px;
+	display: flex;
+	border: 3px solid #000;
+	border-radius: 60px;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	background-color: white;
+	font-size: 25px;
+	text-transform: uppercase;
+	padding: 20px;
+
+}
+h2{
+	text-align: center;
+
+}
+p{
+	text-align: center;
+	line-height: 200%;
+}
+a{
+	text-decoration: none;
+	color: #000;
+	height: auto;
+	}
+
+a:visited{
+	text-decoration: none;
+	color: #000;
+	}
+a:hover{
+	background-color: rgb(0, 0, 0);
+	color: white;
+}
+.about{
+	max-width: 1000px;
+	background-color: #C4F1BE;
+	border-radius: 20px;
+	padding: 15px;
+}
+.featureH{
+	text-align: center;
+	font-size: 50px;
+}
+.featureP{
+	text-align: center;
+	font-size: 18px;
+}
+.imgTable{
+width: 100%;
+font-size: 25px;
+}
+td {
+	width: 50%;
+
+}
+img{
+	width: 100%;
+	/* height: 20%; */
+	border-radius: 15px;
+	scale: 0.9;
+}
+
+.zoom {
+	padding: 10px;
+	transition: transform .2s; /* Animation */
+	margin: 0 auto;
+  }
+  
+  .zoom:hover {
+	transform: scale(1.15); 
+  }
+  .oneL{
+	padding: 20px;
+	text-align: center;
+	font-size: 18px;
+  }
+  footer{
+	text-align: center;
+	background-color: #C4F1BE;
+	padding-top: 40px;
+  }
+  .footerL{
+	
+width: 400px;
+float: left;
+
+  }
+  .footerR{
+
+width: 400px;
+float: left;
+  }
+  .footfoot{
+	background-color: #91b38d;
+	padding-top: 40px;
+  }
+
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+	
+	width: 800px; /* Full width */
+	padding: 12px; /* Some padding */ 
+	border: 2px solid rgb(0, 0, 0); /* Gray border */
+	border-radius: 10px; /* Rounded borders */
+	box-sizing: border-box; /* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	 /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+    input[type=submit] {
+	background-color: #C4F1BE;
+	color: black;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  input[type=submit]:hover {
+	background-color: #91b38d;
+  }
+   .container {
+	display: flex;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	/* background-color: #f2f2f2; */
+	padding: 20px;
+  }
+  .accordion {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: center;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+	background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+	padding: 0 18px;
+	background-color: white;
+	display: none;
+	overflow: hidden;
+  }
+  .panel {
+	padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+  }
+  .accordion:after {
+	content: '\02795'; /* Unicode character for "plus" sign (+) */
+	font-size: 13px;
+	color: #777;
+	float: right;
+	margin-left: 5px;
+  }
+  
+  .active:after {
+	content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+ 
+  .flex-container-GRID{
+	width: 900px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	padding: 50px;
+	justify-content: space-evenly;
+}
+.grid3{
+	display: flex;
+	width:300px;
+	height: 300px;
+	text-align: center;
+}
