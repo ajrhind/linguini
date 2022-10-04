@@ -1,8 +1,12 @@
 *{
 	box-sizing: border-box;
 	margin-top: 0px;
+	padding:0px;
 }
-
+html{
+	margin: 0px;
+	padding: 0px;
+}
 header{
 	padding-top: 0px;
 	padding-right: 50px;
@@ -15,7 +19,7 @@ header{
 }
 
 body{
-	padding-top: 15px;
+	padding-top: 0px;
 	font-family: helvetica;
 	margin-top: 0px;
 
@@ -35,22 +39,23 @@ section{
 .flex-container{
 	display: flex;
 	flex-direction: row;
-	padding: 50px;
+	padding: 20px;
+	width: 100%;
 	justify-content: space-evenly;
+	
 }
 .gLeft{
 	float: left;
 	width: 35%;
 	
 }
-.gRight{
+.gRMenu {
 	display: flex;
-	float: left;
-	width: 60%;
+	width: 65%;
 	justify-content: space-between;
-	flex-direction: row;
-	height: 35px;
-
+	float:right;
+	/* flex-direction: row; */
+	
 }
 .secondary-button{
 	width: 100px;
@@ -120,22 +125,16 @@ a:hover{
 	text-align: center;
 	font-size: 18px;
 }
-.imgTable{
-width: 100%;
-font-size: 25px;
-}
-td {
-	width: 50%;
 
-}
 img{
-	width: 100%;
+	width: auto;
 	/* height: 20%; */
 	border-radius: 15px;
 	scale: 0.9;
 }
 
 .zoom {
+	width: auto;
 	padding: 10px;
 	transition: transform .2s; /* Animation */
 	margin: 0 auto;
@@ -173,7 +172,7 @@ float: left;
   /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
 	
-	width: 800px; /* Full width */
+	width: 100%; /* Full width */
 	padding: 12px; /* Some padding */ 
 	border: 2px solid rgb(0, 0, 0); /* Gray border */
 	border-radius: 10px; /* Rounded borders */
@@ -194,12 +193,13 @@ input[type=text], select, textarea {
 	background-color: #91b38d;
   }
    .container {
-	display: flex;
+	/* display: flex; */
+
 	justify-content: center;
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 5px;
-	/* background-color: #f2f2f2; */
+	width: auto;
 	padding: 20px;
   }
   .accordion {
@@ -258,4 +258,161 @@ input[type=text], select, textarea {
 	width:300px;
 	height: 300px;
 	text-align: center;
+}
+.login{
+	padding: 20px;
+	float: left;
+	width: 50%;
+	
+}
+.logN{
+	padding: 10px;
+	/* height: 600px; */
+}
+/* Hide the link that should open and close the topnav on small screens */
+  .gRMenu .icon {
+	display: none;
+	float: right;
+  }
+
+.dropbtn {
+	display:none;
+	background-color: #3498DB;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+  }
+  
+
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+	display: none;
+	position: relative;
+	display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+  }
+  
+  /* Links inside the dropdown */
+ 
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: rgb(0, 0, 0);
+	color: white;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:none;}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 768px) {
+	.gRMenu a:not(:first-child) {display: none;}
+	.gRMenu a.icon {
+	  float: right;
+	  display: block;
+	}
+  
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  /* @media screen and (max-width: 480px) { */
+	.gRMenu.responsive {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		float:right;
+		justify-content:space-around;
+
+	}
+	.gRMenu.responsive a.icon {
+	  position: absolute;
+	  right: 0;
+	  top: 0;
+	}
+	.gRMenu.responsive a {
+	  float: right;
+	  display: flex;
+	  text-align: left;
+	  flex-direction: column;
+
+	}
+	a.icon:hover{
+		color: white;
+		background-color: #C4F1BE;
+	}
+
+
+/* Dropdown Button */
+.dropbtn {
+	display: block;
+	background-color: white;
+	color: black;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	width: 100px;
+	height: 35px;
+	display: flex;
+	border: 2px solid #000;
+	border-radius: 50px;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	background-color: white;
+	font-size: 15px;
+ 	text-transform: uppercase;
+
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+	background-color: rgb(0, 0, 0);
+	color: white;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  /* .gRMenu.dropdown {
+	position: relative;
+	display: inline-block;
+  } */
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	min-width: auto;
+	background-color: transparent;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+	color: black;
+	padding: 12px;
+	text-decoration: none;
+	display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  /* .dropdown-content a:hover {background-color: #ddd;} */
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+  input[type=text], select, textarea {
+	 /* Full width */
+	margin-left: auto;
+	margin-right: auto;
+}
+	.container{
+		margin-left: auto;
+		margin-right: auto;
+	}
 }

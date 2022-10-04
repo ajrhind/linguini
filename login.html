@@ -8,31 +8,56 @@
 </head>
 <body>
 
-<header>
-<div class="flex-container">
-	<div class="gLeft">
-		<h2>hello</h2></div>
-		<div class="gRight">
-			<a class="secondary-button" href="contact.html"><div ><strong>contact</strong></div></a>
-			<a class="secondary-button" href="lessons.html"><div ><strong>lessons</strong></div></a>
-			<a class="secondary-button" href="recipes.html"><div><strong>recipes</strong></div></a>
-			<a class="secondary-button" href="login.html"><div><strong>login</strong></div></a>
-			<a class="secondary-button" href="profile.html"><div><strong>profile</strong></div></a>
+	<header>
+		<div class="flex-container">
+			<div class="gLeft">
+				<h2><a href="index.html">hello</a</h2></div>
+			  <div class="gRMenu">
+				<a class="secondary-button" href="contact.html"><div ><strong>contact</strong></div></a>
+				<a class="secondary-button" href="lessons.html"><div ><strong>lessons</strong></div></a>
+				<a class="secondary-button" href="recipes.html"><div><strong>recipes</strong></div></a>
+				<a class="secondary-button" href="login.html"><div><strong>login</strong></div></a>
+				<a class="secondary-button" href="profile.html"><div><strong>profile</strong></div></a>
+			  </div>
+				<div class="dropdown">
+				  <button onclick="myFunction()" class="dropbtn"><strong>menu</strong></button>
+				  <div id="myDropdown" class="dropdown-content">
+					<div><a class="secondary-button" href="contact.html"><strong>contact</strong></a></div>
+					<div><a class="secondary-button" href="lessons.html"><strong>lessons</strong></a></div>
+					<div><a class="secondary-button" href="recipes.html"><strong>recipes</strong></a></div>
+					<div><a class="secondary-button" href="login.html"><strong>login</strong></a></div>
+					<div><a class="secondary-button" href="profile.html"><strong>profile</strong></a></div>
+				  </div>
+				</div>
 		</div>
-</div>
-</header>
-
+		</header>
+		
+		<script src="script.js">
+		  </script>
 <section>
-<div class="gLeft">
-	<form>
+	<h2>OR</h2>
+	<div class="flex-container">
+<div class="login">
+	<h2>Login</h2>
+	<form class="logN">
 		<input type="text" id="email" name="email" placeholder="email" style="width:100%">
 		<input type="text" id="email" name="email" placeholder="email" style="width:100%">
 	</form>
+	<a class="secondary-button" href="profile.html" style="margin-left: auto;margin-right: auto;"><div><strong>Log in</strong></div></a>
 
 </div>
-<div class="gRight"></div>
+<div class="login" style="float:right">
+	<h2>Sign up</h2>
+<form class="logN">
+	<input type="text" id="email" name="email" placeholder="email" style="width:100%">
+	<input type="text" id="email" name="email" placeholder="email" style="width:100%">
+	<input type="text" id="email" name="email" placeholder="email" style="width:100%">
+	<input type="text" id="email" name="email" placeholder="email" style="width:100%">
+</form>
+<a class="secondary-button" href="profile.html" style="margin-left: auto;margin-right: auto;"><div><strong>sign up</strong></div></a>
+</div>
 
-
+</div>
 
 </section>
 
