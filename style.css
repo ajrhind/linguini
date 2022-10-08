@@ -59,14 +59,35 @@ section{
 .gRMenu2 {
 	display: flex;
 	width: 100%;
-	justify-content: space-between;
-	float:right;
+	justify-content: space-around;
+	float:center;
 	
+}
+.half{
+	width: 45%;
+	padding: 10px;
+	float:left;
 }
 .secondary-button{
 	width: 100px;
 	height: 35px;
 	display: flex;
+	border: 2px solid #000;
+	border-radius: 50px;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	background-color: white;
+	font-size: 15px;
+ 	text-transform: uppercase;
+
+}
+.secondary-button2{
+	width: 150px;
+	height: 35px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
 	border: 2px solid #000;
 	border-radius: 50px;
 	justify-content: center;
@@ -107,6 +128,9 @@ h2{
 p{
 	text-align: left;
 	line-height: 200%;
+}
+li{
+	line-height:200%
 }
 a{
 	text-decoration: none;
@@ -266,12 +290,12 @@ img.grid{
 }
 img.gridHome{
 	width: 300px;
-	height: 300;
+	height: 300px;
 }
 
 .zoom {
 	width: 45%;
-	height: 400px;
+	height: 450px;
 	padding: 10px;
 	transition: transform .2s; /* Animation */
 	margin: 0 auto;
@@ -323,17 +347,30 @@ img.gridHome{
 .login{
 	padding: 20px;
 	float: left;
-	width: 50%;
+	width: 45%;
 	
 }
 .logN{
 	padding: 10px;
-	/* height: 600px; */
+}
+.or{
+	display: flex;;
+	width: 10%;
+	text-align: center;
+	justify-content: center;
+	padding: 10px;
+
+}
+.lesson{
+	width:60%;
+	margin-left: auto;
+	margin-right: auto;
 }
 /* Hide the link that should open and close the topnav on small screens */
   .gRMenu .icon {
 	display: none;
 	float: right;
+
   }
 
 .dropbtn {
@@ -483,6 +520,14 @@ img{
 	
 
 	}
-
+	.login{
+		padding: 20px;
+		/* float: left; */
+		width: 100%;
+		
+	}
+	.or{
+		width: 100%;
+	}
 
 }
