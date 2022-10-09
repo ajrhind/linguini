@@ -12,7 +12,7 @@ header{
 	padding-right: 50px;
 	padding-left: 50px;
 	padding-bottom: 0px;
-	margin-top: 0px;
+	margin: 0px;
 	background-color: #C4F1BE;
 	height: 150px;
 
@@ -63,8 +63,11 @@ color:transparent;
 background-color: transparent;
 	}
 .gRMenu {
+	margin-top: auto;
+	margin-bottom: auto;
 	display: flex;
 	width: 65%;
+	align-content: center;
 	justify-content: space-around;
 	float:right;
 	
@@ -85,7 +88,7 @@ background-color: transparent;
 	
 }
 .half{
-	width: 45%;
+	width: 50%;
 	padding: 10px;
 	float:left;
 }
@@ -174,13 +177,13 @@ a:hover{
 	padding: 15px;
 }
 a.titleH{
-	text-decoration:underline;
 	text-align: left;
 	font-size: 30px;
-  }
+	/* text-decoration: overline; */
+}
 
 a.titleH:hover{
-	text-decoration: overline;
+	text-decoration:underline;
 	background-color: white;
 	color: #000;
 
@@ -191,7 +194,9 @@ a.titleH:hover{
 }
 .featureP{
 	text-align: center;
+
 	font-size: 18px;
+	/* height: 100px; */
 }
 .flex-container-Profile{
 	display: flex;
@@ -244,17 +249,16 @@ float: left;
 	padding-top: 40px;
   }
 
-  /* Style inputs with type="text", select elements and textareas */
   input[type=text], select, textarea {
 	  
-	  width: 100%; /* Full width */
-	  padding: 12px; /* Some padding */ 
-	border: 2px solid rgb(0, 0, 0); /* Gray border */
-	border-radius: 10px; /* Rounded borders */
-	box-sizing: border-box; /* Make sure that padding and width stays in place */
-	margin-top: 6px; /* Add a top margin */
-	margin-bottom: 16px; /* Bottom margin */
-	 /* Allow the user to vertically resize the textarea (not horizontally) */
+	  width: 100%; 
+	  padding: 12px; 
+	border: 2px solid rgb(0, 0, 0); 
+	border-radius: 10px; 
+	box-sizing: border-box; 
+	margin-top: 6px; 
+	margin-bottom: 16px; 
+	
   }
     input[type=submit] {
 	background-color: #C4F1BE;
@@ -268,8 +272,6 @@ float: left;
 	background-color: #91b38d;
   }
    .container {
-	/* display: flex; */
-
 	justify-content: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -290,12 +292,11 @@ float: left;
 	transition: 0.4s;
   }
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .accordion:hover {
 	background-color: #ccc;
   }
   
-  /* Style the accordion panel. Note: hidden by default */
+
 .panel {
 	padding: 0 18px;
 	background-color: white;
@@ -310,7 +311,7 @@ float: left;
 	transition: max-height 0.2s ease-out;
   }
 .accordion:after {
-	content: '\02795'; /* Unicode character for "plus" sign (+) */
+	content: '\02795';
 	font-size: 13px;
 	color: #777;
 	float: right;
@@ -318,18 +319,17 @@ float: left;
   }
   
 .active:after {
-	  content: "\2796"; /* Unicode character for "minus" sign (-) */
+	  content: "\2796"; 
 	}
 
 img{
 	width: 100%;
-	/* height: 20%; */
 	border-radius: 15px;
 	scale: 1;
 	object-fit: cover;
 }
 img.grid{
-	width: 300px;
+	width: 350px;
 	height: 250px;
 }
 img.gridHome{
@@ -340,8 +340,7 @@ img.gridHome{
 .zoom {
 	width: 45%;
 	height: 450px;
-	/* padding: 10px; */
-	transition: transform .2s; /* Animation */
+	transition: transform .2s;
 	margin-left:auto;
 	margin-right: auto;
 	}
@@ -384,7 +383,6 @@ img.gridHome{
 	text-align: left;
 	float: left;
 	flex-direction: column;
-	/* padding: 20px; */
 	object-fit: cover;
 }
 .gridT.h3{
@@ -418,7 +416,6 @@ img.gridHome{
 .quiz{
 	line-height: 200%;;
 }
-/* Hide the link that should open and close the topnav on small screens */
   .gRMenu .icon {
 	display: none;
 	float: right;
@@ -436,9 +433,6 @@ img.gridHome{
 	padding: 20px;
   }
 
-  /* .logo{
-	wow;
-  } */
 
 .dropbtn {
 	display:none;
@@ -452,14 +446,12 @@ img.gridHome{
   
 
   
-  /* The container <div> - needed to position the dropdown content */
   .dropdown {
 	display: none;
 	position: relative;
 	display: inline-block;
   }
   
-  /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
 	display: none;
 	position: absolute;
@@ -467,10 +459,6 @@ img.gridHome{
 	min-width: 160px;
   }
   
-  /* Links inside the dropdown */
- 
-  
-  /* Change color of dropdown links on hover */
   .dropdown-content a:hover {background-color: rgb(0, 0, 0);
 	color: white;}
   
@@ -478,10 +466,8 @@ img.gridHome{
 
   .progressB{
 	display: flex;
-	/* justify-content: center; */
 	margin-left: auto;
 	margin-right: auto;
-  /* position: absolute; */
  	width: 100%;
 	height: 50px;
   	left: 341px;
@@ -497,7 +483,6 @@ img.gridHome{
 	margin-left: 5px;
 	margin-top: auto;
 	margin-bottom: auto;
-  /* position: absolute; */
  	width: 57%;
 	height: 40px;
   	left: 341px;
@@ -633,11 +618,7 @@ img.PP{
 }
 .flex-container-Profile{
 	display: flex;
-	/* flex-direction: row; */
-	/* row-gap: 40px; */
-	/* padding: 20px; */
 	width: 100%;
-	/* justify-content: space-evenly; */
 	
 }
 .profile{
@@ -645,7 +626,7 @@ img.PP{
 	width: 50%;
 	flex-direction: column;
 	justify-content: start;
-	/* text-align: center; */
+
 }
 
 .profilePic{
@@ -658,13 +639,12 @@ img.PP{
 	margin-right: auto;
 	margin-left: auto;
 	padding: 10px;
-	transition: transform .2s; /* Animation */
+	transition: transform .2s; 
 	
 
 	}
 	.login{
 		padding: 20px;
-		/* float: left; */
 		width: 100%;
 		
 	}
