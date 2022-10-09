@@ -12,7 +12,7 @@
   <header>
     <div class="flex-container">
       <div class="gLeft">
-        <h2><a href="index.html">hello</a</h2></div>
+				<a href="index.html" class="logoH"><img src="img/logo.png" class="logo"></a></div>
           <div class="gRMenu">
             <a class="secondary-button" href="contact.html"><div ><strong>contact</strong></div></a>
             <a class="secondary-button" href="lessons.html"><div ><strong>lessons</strong></div></a>
@@ -40,19 +40,19 @@
 <h2>Frequently Asked Questions</h2>
 <br><br><br>
 
-    <button class="accordion">Section 1</button>
+    <button class="accordion">How do I level up?</button>
     <div class="panel">
-      <p>Lorem ipsum...</p>
+      <p>The way you level up is by completing the quiz for a lesson or by uploading a picture of the food you made! Very easy.</p>
     </div>
     
-    <button class="accordion">Section 2</button>
+    <button class="accordion">Can I reccommend a recipe or lesson?</button>
     <div class="panel">
-      <p>Lorem ipsum...</p>
+      <p>Of course! All you need to do is contact us and put 'reccomendation' in the topic bar!</p>
     </div>
     
-    <button class="accordion">Section 3</button>
+    <button class="accordion">How do I cancel my account?</button>
     <div class="panel">
-      <p>Lorem ipsum...</p>
+      <p>Email us!</p>
     </div>
 
 </section>
@@ -63,49 +63,27 @@
     <a class="primary-button" href="contact.html"><div ><strong>contact</strong></div></a>
 
 </section>
-<script>
-    var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-}
+<script src="script.js">
 </script>
 
 <footer>
-	<div class="flex-container">
-	<div class="footerL">left</div>
-	<div class="footerR">right</div>
+  <div class="flex-container">
+  <div class="footerL">
+    <h2>Handy Links</h2>
+    <p>ourshop.com</p><br>
+    <p>twitter.com</p>
+  </div>
+  <div class="footerR"><h2>
+    Help
+  </h2>
+  <p>email us: food@home.com</p>
+  <div class="gRMenu23">
+    <div><a href="faq.html" class="secondary-button">faq</a></div><br>
+    <div><a href="contact.html" class="secondary-button">contact</a></div>
+  </div>
+</div>
 </div>
 <div class="footfoot"></div>
 </footer>
-
 </body>
 </html>

@@ -47,8 +47,21 @@ section{
 .gLeft{
 	float: left;
 	width: 35%;
-	
+	justify-content: flex-start;
+	float: left;
+	margin-left: 0px;
+	margin-right: auto;
+
 }
+	.logo{
+		width: 220px;
+		border: white;
+		border-width: 3px;
+	}
+	a.logoH:hover{
+color:transparent;
+background-color: transparent;
+	}
 .gRMenu {
 	display: flex;
 	width: 65%;
@@ -60,6 +73,14 @@ section{
 	display: flex;
 	width: 100%;
 	justify-content: space-around;
+	float:center;
+	
+}
+.gRMenu23 {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	/* justify-content: space-around; */
 	float:center;
 	
 }
@@ -172,7 +193,29 @@ a.titleH:hover{
 	text-align: center;
 	font-size: 18px;
 }
-
+.flex-container-Profile{
+	display: flex;
+	flex-direction: row;
+	row-gap: 40px;
+	padding: 20px;
+	width: 100%;
+	justify-content: space-evenly;
+	
+}
+.profile{
+	display:flex;
+	flex-direction: column;
+	width: 65%;
+	float: right;
+}
+.profilePic{
+	display:flex;
+	width: 40%;
+}
+.PP{
+	border-radius: 130px;
+	width:230px;
+}
 
 
 .oneL{
@@ -235,6 +278,7 @@ float: left;
 	padding: 20px;
 }
 .accordion {
+	font-size: 20px;
 	background-color: #eee;
 	color: #444;
 	cursor: pointer;
@@ -285,7 +329,7 @@ img{
 	object-fit: cover;
 }
 img.grid{
-	width: 350px;
+	width: 300px;
 	height: 250px;
 }
 img.gridHome{
@@ -296,9 +340,10 @@ img.gridHome{
 .zoom {
 	width: 45%;
 	height: 450px;
-	padding: 10px;
+	/* padding: 10px; */
 	transition: transform .2s; /* Animation */
-	margin: 0 auto;
+	margin-left:auto;
+	margin-right: auto;
 	}
 	
 	.zoom:hover {
@@ -307,6 +352,7 @@ img.gridHome{
 
 	.recipeT{
 		height: auto;
+		width: 100%;
 	}
  
 .flex-container-GRID{
@@ -323,23 +369,26 @@ img.gridHome{
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
+	margin-left: auto;
+	margin-right: auto;
 	row-gap: 60px;
 	padding: 10px;
 	justify-content: space-between;
 }
 .grid3{
 	display: flex;
-	width:300px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 	height: 450px;
 	text-align: left;
 	float: left;
 	flex-direction: column;
-	padding: 20px;
+	/* padding: 20px; */
 	object-fit: cover;
-
 }
 .gridT.h3{
-	width:100%;
+
 	display: flex;
 	float: right;
 
@@ -366,12 +415,30 @@ img.gridHome{
 	margin-left: auto;
 	margin-right: auto;
 }
+.quiz{
+	line-height: 200%;;
+}
 /* Hide the link that should open and close the topnav on small screens */
   .gRMenu .icon {
 	display: none;
 	float: right;
 
   }
+  .results{
+	max-width: 700px;
+	display: flex;
+	max-width: 700px;
+	padding-left: 20px;
+  }
+  .resultsR{
+	width: 50%;
+	float: left;
+	padding: 20px;
+  }
+
+  /* .logo{
+	wow;
+  } */
 
 .dropbtn {
 	display:none;
@@ -409,13 +476,44 @@ img.gridHome{
   
   .show {display:none;}
 
- 
- 
+  .progressB{
+	display: flex;
+	/* justify-content: center; */
+	margin-left: auto;
+	margin-right: auto;
+  /* position: absolute; */
+ 	width: 100%;
+	height: 50px;
+  	left: 341px;
+	top: 705px;
+  
+  	background: #201E50;
+  	border-radius: 41px;
+  }
+  .progressF{
+	display: flex;
+	justify-content: start;
+	align-content: center;
+	margin-left: 5px;
+	margin-top: auto;
+	margin-bottom: auto;
+  /* position: absolute; */
+ 	width: 57%;
+	height: 40px;
+  	left: 341px;
+	top: 705px;
+  
+  	background: #C4F1BE;
+  	border-radius: 41px;
+  }
 @media screen and (max-width: 768px) {
 	.gRMenu a:not(:first-child) {display: none;}
 	.gRMenu a.icon {
 	  float: right;
 	  display: block;
+	}
+	.gRMenu{
+		display: none;
 	}
 
 	.gRMenu.responsive {
@@ -496,13 +594,26 @@ img.gridHome{
 		margin-right: auto;
 	}
 /* --------------------------------------- */
+
+section{
+
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding: 20px;
+
+
+}
 .flex-container-GRID{
 	width: inherit;
 	display: flex;
 	flex-direction: column;
 	/* row-gap: 50px; */
 	padding: 10px;
-	justify-content: center;
+	/* justify-content: center; */
+	align-content: center;
 }
 img{
 	display: block;
@@ -512,9 +623,40 @@ img{
 	margin-right: auto;
 	margin-left: auto;
 }
+img.PP{
+	display: block;
+	width: 150px;
+	height: auto;
+	border-radius: 150px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.flex-container-Profile{
+	display: flex;
+	/* flex-direction: row; */
+	/* row-gap: 40px; */
+	/* padding: 20px; */
+	width: 100%;
+	/* justify-content: space-evenly; */
+	
+}
+.profile{
+	display:flex;
+	width: 50%;
+	flex-direction: column;
+	justify-content: start;
+	/* text-align: center; */
+}
+
+.profilePic{
+	display:flex;
+	width: 40%;
+}
 
 .zoom {
 	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
 	padding: 10px;
 	transition: transform .2s; /* Animation */
 	
@@ -530,4 +672,46 @@ img{
 		width: 100%;
 	}
 
+	.half{
+		width: 100%;
+		padding: 10px;
+		float:left;
+	}
+	.flex-containerRR{
+		display: flex;
+		flex-direction: column;
+		padding: 20px;
+		width: 100%;
+		justify-content: space-evenly;
+		
+	}
+
+	.flex-container{
+		display: flex;
+		flex-direction: row;
+		padding: 10px;
+		width: 100%;
+		justify-content: space-evenly;
+		
+	}
+	.logo{
+		width: 200px;
+	}
+	.gLeft{
+		justify-content: flex-start;
+		float: left;
+		margin-left: 0px;
+		margin-right: auto;
+
+	}
+	header{
+		padding-top: 0px;
+		padding-right: 20px;
+		padding-left: 20px;
+		padding-bottom: 0px;
+		margin: 0px;
+		background-color: #C4F1BE;
+		height: 150px;
+	
+	}
 }
